@@ -9,17 +9,22 @@ html {
   box-sizing: inherit;
 }
 
+main {
+  padding: 1rem;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
+
 
 ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0;
 }
 
 li {
@@ -29,6 +34,7 @@ li {
   background-color: #ede3db;
   border: 2px solid #623b0c;
   border-radius: 8px;
+  padding: 1rem;
 }
 
 h1, h2 {
@@ -37,32 +43,30 @@ h1, h2 {
 }
 
 h1 {
-  margin: 0;
-  padding: .5em .75em .75em 1rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-  margin: 0;
-  padding: 1rem 1rem .5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 img {
   width: 100%;
-  margin: 0;
-  padding: .5em 1rem;
+  margin-bottom: 1.5rem;
 }
 
 p {
   margin: 0 0 auto;
-  padding: .5em 1rem;
   color: #000;
 }
 
 li a {
-  padding: .5em .75em;
-  margin: 1rem;
+  padding: .5em .75em .6em;
+  margin-top: 1.5rem;
   background-color: #623b0c;
   color: #fff;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
 }
