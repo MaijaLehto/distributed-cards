@@ -1,34 +1,25 @@
 html {
   box-sizing: border-box;
-  font-family: Georgia, serif;
   line-height: 1.5;
+  font-family: Georgia, serif;
   background-color: #f5f2f0;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
-h1, h2 {
-  color: #623b0c;
-  font-family: "Denk One", sans-serif;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  padding-left: 1rem;
-  font-size: 2rem;
-  padding-bottom: 0;
-}
-
-main ol {
+ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 1rem;
-  margin: 1rem;
-  padding: 0;
+  margin: 0;
+  padding: 0 1rem;
 }
 
 li {
@@ -36,33 +27,42 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   background-color: #ede3db;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 2rem;
   border: 2px solid #623b0c;
   border-radius: 8px;
 }
 
-img {
-  width: 100%;
-  padding-bottom: 0;
+h1, h2 {
+  font-family: "Denk One", sans-serif;
+  color: #623b0c;
 }
 
-body {
+h1 {
   margin: 0;
+  padding: .5em .75em .75em 1rem;
+}
+
+h2 {
+  margin: 0;
+  padding: 1rem 1rem .5rem;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+  padding: .5em 1rem;
+}
+
+p {
+  margin: 0 0 auto;
+  padding: .5em 1rem;
+  color: #000;
 }
 
 li a {
-  font-size: 1.125rem;
-  padding: .5em;
+  padding: .5em .75em;
+  margin: 1rem;
   background-color: #623b0c;
-  text-decoration: none;
-  text-align: left;
   color: #fff;
   border-radius: 6px;
-}
-
-li a:hover {
-  background-color: #fff;
-  color: #623b0c;
+  text-decoration: none;
 }
