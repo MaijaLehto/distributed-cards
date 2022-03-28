@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=PT+Serif&display=swap');
-
 html {
   box-sizing: border-box;
-  font-family: 'Denk One', sans-serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #f5f2f0;
 }
 
 *,
@@ -13,41 +11,58 @@ html {
   box-sizing: inherit;
 }
 
-ol {
+h1, h2 {
+  color: #623b0c;
+  font-family: "Denk One", sans-serif;
+}
+
+h1 {
+  padding-left: 1rem;
+  font-size: 2rem;
+  padding-bottom: 0;
+}
+
+main ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
-  margin: 0;
-  padding: 2rem 0;
+  margin: 1rem;
+  padding: 0;
 }
 
 li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #f5f2f0;
-  padding: 1.125rem;
+  background-color: #ede3db;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
   border: 2px solid #623b0c;
   border-radius: 8px;
 }
 
 img {
-
+  width: 100%;
+  padding-bottom: .;
 }
 
-section a {
+body {
+  margin: 0;
+}
+
+li a {
   font-size: 1.125rem;
-  padding: .75rem;
-  background-color: #e7e7e7;
-  border-radius: 6px;
+  padding: .5rem;
+  background-color: #623b0c;
   text-decoration: none;
-  text-align: center;
-  color: #000;
-
+  text-align: left;
+  color: #fff;
+  border-radius: 6px;
 }
 
-section a:hover {
-  background-color: #000;
-  color: #fff;
+li a:hover {
+  background-color: #fff;
+  color: #623b0c;
 }
